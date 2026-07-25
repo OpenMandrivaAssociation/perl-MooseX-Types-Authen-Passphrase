@@ -1,16 +1,16 @@
 %define upstream_name    MooseX-Types-Authen-Passphrase
-%define upstream_version 0.02
+%define upstream_version 0.04
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Authen::Passphrase type constraint and coercions
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/MooseX/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/moose/MooseX-Types-Authen-Passphrase
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/MooseX-Types-Authen-Passphrase-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel

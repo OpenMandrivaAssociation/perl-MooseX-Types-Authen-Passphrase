@@ -1,16 +1,14 @@
 %define upstream_name    MooseX-Types-Authen-Passphrase
-%define upstream_version 0.04
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.04
+Release:	2
 
 Summary:	Authen::Passphrase type constraint and coercions
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/moose/MooseX-Types-Authen-Passphrase
-Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/MooseX-Types-Authen-Passphrase-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/MooseX-Types-Authen-Passphrase-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -26,7 +24,7 @@ This the MooseX::Types manpage library provides string coercions for the
 the Authen::Passphrase manpage family of classes.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
